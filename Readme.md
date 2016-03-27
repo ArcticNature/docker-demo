@@ -6,7 +6,8 @@ creating and destroing environments.
 
 These images are based on `fedora:23` because that is what I run on my laptop.
 
-Images are pushed to the `spogliani/snow-fox` repository on Docker Hub.
+Images are pushed to the `spogliani/snow-fox` repository on
+[Docker Hub](https://hub.docker.com/r/spogliani/snow-fox/).
 
 Docker images
 -------------
