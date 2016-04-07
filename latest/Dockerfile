@@ -36,7 +36,9 @@ RUN git clone https://github.com/ArcticNature/snow-fox.git --recursive  \
   && npm install  \
   && grunt distribute  \
   && mkdir -p /opt/  \
-  && cp --recursive --preserve=all out/packages/snow-fox /opt/
+  && cp --recursive --preserve=all out/packages/snow-fox /opt/  \
+  && useradd --home-dir /opt/snow-fox --shell /bin/false --system --user-group snow-fox  \
+  && chown -R snow-fox:snow-fox /opt/snow-fox
 
 
 # Set entry point to bash because this is a testing image.
