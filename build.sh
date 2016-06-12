@@ -4,12 +4,12 @@ set -e
 
 
 # Variables.
-IMAGE=""
+IMAGE="latest"
 PUSH="no"
 REPO="spogliani/snow-fox"
 
 
-# Parse image.
+# Parse arguments.
 while [ $# -ne 0 ]; do
   arg=$1
   shift
@@ -22,6 +22,10 @@ while [ $# -ne 0 ]; do
     --image)
       IMAGE=$1
       shift
+      ;;
+
+    --all-images)
+      IMAGE=""
       ;;
 
     *)

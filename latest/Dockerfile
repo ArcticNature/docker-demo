@@ -7,6 +7,7 @@ RUN dnf update -y
 
 RUN dnf install -y  \
   file  \
+  findutils  \
   cmake  \
   gcc-c++  \
   git  \
